@@ -52,8 +52,3 @@ window.addEventListener('popstate', function (e) {
     }
 });
 
-history.pushState(null, null, 'new-page.html');
-// or
-history.pushState({url: 'new-page.html'}, 'New Page');
-// or
-history.pushState({url: 'new-page.html', page: 2}, 'New Page', 'new-page.html');
