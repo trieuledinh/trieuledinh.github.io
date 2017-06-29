@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="DHT, TLD, Triệu Lệ Dĩnh, TLDVNFC, Dĩnh Hỏa Trùng" />
+	<meta name="description" content="Cộng đồng Dĩnh Hỏa Trùng Việt Nam" />
+	<title>DHT VN</title>
+	<meta property="og:title" content="DHT VN" />
+	<meta property="og:description" content="Cộng đồng Dĩnh Hỏa Trùng Việt Nam" />
+	<meta property="og:site_name" content="DHT VN">
+	<meta property="og:type" content="website" />
+
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/colorbox.css" media="all" /> -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/typed.js"></script>
+
+	</head>
+
+		<body>
+
+<video poster="" id="bgvid" playsinline autoplay loop>
+<source src="video/index-video.mp4" type="video/mp4">
+</video>
+<div id="introduction">
+<h1>Đôi lời</h1>
+<p>Trang web được lập bởi đội ngũ admin Tường Thành Vĩnh Cửu
+<script src="typed.js"></script>
+
+<link rel="stylesheet" type="text/css" href="main.css" media="all" />
+
+
+        <div class="type-wrap">
+            <div id="typed-strings">
+                <p>Nếu như bạn là một DHT only chân chính</p>
+                <p>Xin đừng đưa cô ấy tới chốn thị phi như cfs</p>
+				<p>Hãy bênh cô ấy một cách khôn ngoan,<br/>chửi đúng người và nói lý với đúng người</p>
+				<p>Trân trọng nỗ lực của cô ấy mà không phải tâng bốc</p>
+				<p>DHT không cần phải nịnh bợ bất cứ ai<br/>Hay ăn mày tình thương của bất cứ ai</p>
+				<p>Làm một fandom độc lập về tư tưởng từng cá nhân</p>
+				<p>Hãy trở nên mạnh mẽ để bảo vệ cô ấy</p>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+		<div id="home"><a href="home" >TRANG CHỦ</a>
+			<audio id="beep-three" controls="controls" preload="auto" __idm_id__="-2147441663" style="display:none">
+				<source src="audio/click.mp3">
+            </div></div>
+		<script>
+		//click sound
+var beepThree = $("#beep-three")[0];
+$("#home a")
+	.mouseenter(function() {
+		beepThree.pause();
+		beepThree.play();
+	});
+		
+    document.addEventListener('DOMContentLoaded', function(){
+        Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+            typeSpeed: 20,
+            backDelay: 2700,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to null for infinite loop
+            loopCount: null,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+        var resetElement = document.querySelector('.reset');
+        if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed')._typed.reset();
+            });
+        }
+    });
+    function newTyped(){ /* A new typed object */ }
+    function foo(){ console.log("Callback"); }
+	
+    </script>
+	
+	<style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+	</div>
+	</body>
+	
+</html>
