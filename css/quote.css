@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Farsan');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Farsan');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+#header-box {
+	
+font-family: 'Amatic SC', cursive;
+font-size: 40px;
+text-align: center;
+}
+
+#random_text {
+	text-align: center; 
+	  vertical-align: middle;
+
+	padding: 80px; 
+	padding-top: 20px;
+	font-family: 'Farsan', cursive;
+	font-size: 1.5em;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+	    border: 2px solid transparent;
+					
+	
+}
+
+
+
+
+  .effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.box h3{
+	text-align:center;
+	position:relative;
+	top:80px;
+
+}
+.box {
+	width:70%;
+	height:600px;
+	background:#FFF;
+	margin:40px auto;
+		background-image: url('img/quote.jpg');
+
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+	    
+}
+
+
+#text-box {
+	width:800px;
+	height:auto;
+	background-color: #FFF;
+		margin:40px auto;
+    border: 5px solid rgba(252, 208, 130, 0.62);
+    border-bottom: hidden;
+	
+}
+
+#text-box:hover {
+	
+	    border-color: rgba(252, 245, 115, 0.39);
+
+}
+
+
+
+ 

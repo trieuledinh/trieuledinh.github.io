@@ -1,4 +1,5 @@
 /* Visit http://www.menucool.com/responsive-slider for instructions */
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&subset=vietnamese');
 
 
 #ninja-slider {
@@ -68,10 +69,10 @@
 
 /*---------- Captions -------------------*/
 
+
 #ninja-slider .caption {
     font-size:10em;
-    font-family: "Arial";
-	font-weight:bolder;
+	font-family: "Sigmar One", cursive;
     position:absolute;
     width:100%;
     text-align:center;
