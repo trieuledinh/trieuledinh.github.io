@@ -90,7 +90,7 @@ text-align: center;
 
 
 #text-box {
-	width:800px;
+	width:90%;
 	height:auto;
 	background-color: #FFF;
 		margin:40px auto;
@@ -106,5 +106,15 @@ text-align: center;
 }
 
 
+@media only screen and (max-width: 480px) {
+#text-box {max-width: 100%;}
 
+.box {
+    width: 90%;
+	height: 400px;
+}
+.container {
+	padding: 15px;
+
+}
  
