@@ -116,7 +116,7 @@ function handle(delta) {
 	var distance = 780;
    
     $('html, body').stop().animate({
-        scrollTop: $(window).scrollTop() - (distance * delta)
+        scrollTop: $(document).scrollTop() - (distance * delta)
     }, time );
 }
 
