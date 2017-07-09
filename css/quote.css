@@ -110,11 +110,14 @@ text-align: center;
 #text-box {max-width: 100%;}
 
 .box {
-    width: 90%;
-	height: 400px;
+    width: 97%;
+	height: 500px;
 }
 .container {
 	padding: 15px;
 
 }
- 
+
+#random_text {padding: 5px; font-size: 1em;}
+
+} 
