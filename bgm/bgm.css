@@ -1,0 +1,135 @@
+
+
+.demo-container {
+	padding:0 20px;
+	font-family: "Comic Sans MS";
+	width: 30%;
+	float: right;
+	border-radius: 100px;
+	margin-top:: 20%;}
+
+.demo-container a, .demo-container a:link, .demo-container a:visited, .demo-container a:hover, .demo-container a:focus, .demo-container a:active {
+	color: #68648b;
+}
+
+.demo-container ul {
+	list-style-type:none;
+	padding:0;
+	margin:1em 0;
+	width: 30%;
+	overflow:hidden;
+	float: right;
+
+}
+
+.demo-container ul span {
+	color: #A0A600;
+}
+
+.demo-container li {
+	float:right;
+	margin-right:1em;
+}
+
+.demo-container p span.track-name {
+	color: #9a93c9;
+}
+
+.play-state, track-name, extra-play-info, jp-duration, jp-current-time {float: right;}
+
+
+/**Track select**/
+
+.dropbtn {
+    background-color: #000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	float: left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d2ceed;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	overflow: hidd;
+}
+
+.dropdown-content a {
+    color: #9a93c9;
+    padding: 12px 2px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgba(61, 55, 41, 0.75); color: #FFF;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(232, 230, 227, 0.85);
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 100px;
+    overflow-x: hidden;
+	
+	
+}
+
+
+@media only screen and (max-width: 480px) {
+    .demo-container {
+    padding: 0 20px;
+    font-family: "Comic Sans MS";
+    width: 80%;
+    float: right;
+    border-radius: 100px;
+}
+
+.demo-container ul {
+	list-style-type:none;
+	padding:0;
+	margin:1em 0;
+	width: 30%;
+	overflow:hidden;
+	float: right;
+
+}
+}
+
+@media only screen and (max-width: 360px) {
+    .demo-container {
+    padding: 0 0px;
+    font-family: "Comic Sans MS";
+    width: 80%;
+    float: left;
+    border-radius: 100px;
+}
+
+.demo-container ul {
+	list-style-type:none;
+	padding:0;
+	margin:1em 0;
+	width: 30%;
+	overflow:hidden;
+	float: right;
+
+}
+}
+
+
+
