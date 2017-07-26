@@ -71,7 +71,7 @@ $(document).ready(function(){
 	// Instance jPlayer
 	my_jPlayer.jPlayer({
 		ready: function () {
-		var random = Math.floor((Math.random()*6));
+		var random = Math.floor((Math.random()*7));
 
     switch(random) {
         case 0:
@@ -95,6 +95,9 @@ $(document).ready(function(){
 			
 		case 5:
 			$("#jp_container .track-6").click();
+			
+		case 6:
+			$("#jp_container .track-7").click();
 
     }
 			
@@ -257,8 +260,8 @@ to{opacity:1;}}</style>-->
 		 <div class="footer-banner">
 		<a href=""> 
 	  	<img src="img/ttvc-home-link.png" onclick="window.open('https://www.facebook.com/tuongthanhvinhcuu', '_blank');"><a>
-		<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftuongthanhvinhcuu%2F&width=350&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId" width="350" height="80" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-	<a href=""><img src="css/img/weibo.png" onclick="window.open('http://weibo.com/210926262', '_blank');"><a>
+		<iframe id="contact" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftuongthanhvinhcuu%2F&width=350&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId" width="350" height="80" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+	<a href=""><img id="weibo" src="css/img/weibo.png" onclick="window.open('http://weibo.com/210926262', '_blank');"><a>
 	</div>
 	
 	
@@ -276,6 +279,7 @@ to{opacity:1;}}</style>-->
 	<a href="bgm/track-list/TamTinh-ChenXiaoTranHieuZhaoLiYingTrieuLeDinh-2670773.mp3" class="track track-4">Tâm Tình</a></li>
 	<a href="bgm/track-list/TaChuaTungTonTai-ZhaoLiYingTrieuLeDinh-4271314.mp3" class="track track-5">Ta Ta Chưa Từng Tồn Tại</a>
 	<a href="bgm/track-list/Vong.mp3" class="track track-6">Vọng</a>
+	<a href="bgm/track-list/10-Nam.MP3" class="track track-7">Mười Năm Của Chúng Ta</a>
 	
   </div>
 </div>
