@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+		<meta charset="UTF-8" />
+<!-- Website Design By: www.happyworm.com -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript" src="bgm/jquery.min.js"></script>
+<script type="text/javascript" src="bgm/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="bgm/jwplayer.shuffle.js"></script>
+<script type="text/javascript" src="bgm/jwplayer.shuffle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bgm/bgm.css">
+	<script type="text/javascript" src="bgm/jquery.jplayer.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	// Local copy of jQuery selectors, for performance.
+	var	my_jPlayer = $("#jquery_jplayer"),
+		my_trackName = $("#jp_container .track-name"),
+		my_playState = $("#jp_container .play-state"),
+		my_extraPlayInfo = $("#jp_container .extra-play-info");
+
+	// Some options
+	var	opt_play_first = true, // If true, will attempt to auto-play the default track on page loads. No effect on mobile devices, like iOS.
+		opt_auto_play = true, // If true, when a track is selected, it will auto-play.
+		opt_text_playing = "Now playing", // Text when playing
+		opt_text_selected = "Track selected"; // Text when not playing
+
+	// A flag to capture the first track
+	var first_track = true;
+
+	// Change the time format
+	$.jPlayer.timeFormat.padMin = false;
+	$.jPlayer.timeFormat.padSec = false;
+	$.jPlayer.timeFormat.sepMin = " min ";
+	$.jPlayer.timeFormat.sepSec = " sec";
+
+	// Initialize the play state text
+	my_playState.text(opt_text_selected);
+
+	// Instance jPlayer
+	my_jPlayer.jPlayer({
+		ready: function () {
+		var random = Math.floor((Math.random()*5));
+
+    switch(random) {
+        case 0:
+			$("#jp_container .track-1").click();
+            break;
+
+        case 1:
+			$("#jp_container .track-2").click();
+            break;
+
+        case 2:
+			$("#jp_container .track-3").click();
+            break;
+
+        case 3:
+			$("#jp_container .track-4").click();
+            break;
+			
+		case 4:
+			$("#jp_container .track-5").click();
+
+    }
+			
+		},
+
+			
+		
+		timeupdate: function(event) {
+			my_extraPlayInfo.text(parseInt(event.jPlayer.status.currentPercentAbsolute, 10) + "%");
+			
+		},
+		play: function(event) {
+			my_playState.text(opt_text_playing);
+		},
+		pause: function(event) {
+			my_playState.text(opt_text_selected);
+		},
+		ended: function(event) {
+			my_playState.text(opt_text_selected);
+		},
+		swfPath: "../../dist/jplayer",
+		cssSelectorAncestor: "#jp_container",
+		supplied: "mp3",
+		wmode: "window"
+	});
+
+	// Create click handlers for the different tracks
+	$("#jp_container .track").click(function(e) {
+		my_trackName.text($(this).text());
+		my_jPlayer.jPlayer("setMedia", {
+			mp3: $(this).attr("href")
+		});
+		if((opt_play_first && first_track) || (opt_auto_play && !first_track)) {
+			my_jPlayer.jPlayer("play");
+		}
+		first_track = false;
+		$(this).blur();
+		return false;
+	});
+
+});
+
+
+
+//]]>
+</script>
+
+
+</head>
+
+<body>
+
+		<div id="jquery_jplayer"></div>
+
+		<!-- Using the cssSelectorAncestor option with the default cssSelector class names to enable control association of standard functions using built in features -->
+
+		<div id="jp_container" class="demo-container">
+			
+			
+			<div class="dropdown">
+  <button class="dropbtn">🎧</button>
+  <div class="dropdown-content scrollable-menu">
+    <a href="bgm/track-list/LoanTheCauDiet.mp3" class="track track-1">Loạn Thế Câu Diệt</a>
+    <a href="bgm/track-list/TamNiem-ZhaoLiYingTrieuLeDinh-4751455.mp3" class="track track-2">Tâm Niệm</a></li>
+    <a href="bgm/track-list/khongthenoi.mp3" class="track track-3">Không Thể Nói</a>
+	<a href="bgm/track-list/TamTinh-ChenXiaoTranHieuZhaoLiYingTrieuLeDinh-2670773.mp3" class="track track-4">Tâm Tình</a></li>
+	<a href="bgm/track-list/TaChuaTungTonTai-ZhaoLiYingTrieuLeDinh-4271314.mp3" class="track track-5">Ta Chưa Từng Tồn Tại</a>
+  </div>
+</div>
+			<ul style="float: left;" >
+				<li> <a class="jp-volume-bar" href="#"><img width="92" height="21" src="bgm/volume-bar.png"></a></li>
+				<li><a class="jp-mute" href="#">🔈</a></li>
+				<li><a class="jp-unmute" href="#">🔇</a></li>
+			</ul>
+			<ul>
+				<li><a class="jp-play" href="#"><img src="bgm/player-play.png"></a></li>
+				<li><a class="jp-pause" href="#"><img src="bgm/player-pause.png"></a></li>
+			</ul>
+			
+			
+			
+			
+		</div></header>
+</body>
+
+</html>
