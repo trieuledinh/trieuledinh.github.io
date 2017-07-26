@@ -16,11 +16,22 @@ body  {
 }
 
 .container {
-	padding: 80px;
-}
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1248px;
+    padding-left: 24px;
+    padding-right: 24px;
+	background-color: #FFF;}
+
+.footer-container {position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1248px;
+    padding-left: 24px;
+    padding-right: 24px;}
 
 #wrapper {
-	background-color: rgba(189, 66, 150, 0.2);
 }
 
 .bt-menu {
@@ -32,8 +43,15 @@ body  {
 	height: 0;
 	border-width: 0px;
 	border-style: solid;
-	border-color: #333;
+	border-image-repeat: repeat;
+    border-image-source: url(img/menu-border.png);
+    border-image-repeat: repeat-y;
+     border-image-repeat: stretch;    
+    border-image-slice: 30;
 	background-color: rgba(0,0,0,0);
+	background-image: url('img/bg-menu.png');
+	    background-repeat: no-repeat;
+
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
 	transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
@@ -58,7 +76,7 @@ body  {
 
 .bt-menu-trigger {
 	position: fixed;
-	bottom: 10px;
+	top: 10px;
 	left: 20px;
 	z-index: 10000;
 	display: block;
@@ -86,13 +104,18 @@ body  {
 	transition: background-color 0.3s;
 }
 
+.bt-menu-trigger:hover{-webkit-filter: brightness(3.3) drop-shadow(9px 9px 20px black);
+}
+
+
+
 .bt-menu-trigger span:before,
 .bt-menu-trigger span:after {
 	position: absolute;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #fff;
+	background: rgba(214, 214, 214, 0.3);
 	content: '';
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
@@ -101,16 +124,21 @@ body  {
 .bt-menu-trigger span:before {
 	-webkit-transform: translateY(-250%);
 	transform: translateY(-250%);
+		background: #rgba(38, 15, 128, 0.2);
+
 }
 
 .bt-menu-trigger span:after {
 	-webkit-transform: translateY(250%);
 	transform: translateY(250%);
+	
 }
 
 .bt-menu-open .bt-menu-trigger span:before {
 	-webkit-transform: translateY(-300%);
 	transform: translateY(-300%);
+	background: #rgba(38, 15, 128, 0.2);
+
 }
 
 .bt-menu-open .bt-menu-trigger span:after {
@@ -173,6 +201,12 @@ body  {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+	
+.bt-menu.bt-menu-open ul:first-of-type li:hover {
+	background-color: rgba(13, 2, 18, 0.8);
+	-webkit-filter: drop-shadow(7px 7px 20px black);
+
+}
 
 /* Second menu */
 .bt-menu ul:nth-of-type(2) li {
@@ -217,7 +251,7 @@ body  {
 .bt-menu ul:first-of-type li a {
 	padding: 0 20px;
 	box-shadow: inset 0 1px rgba(0,0,0,0.2);
-	color: #fff;
+	color: #333;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 1em;
@@ -246,7 +280,9 @@ body  {
 .bt-menu ul:first-of-type li a:focus,
 .bt-menu ul li a:hover:before,
 .bt-menu ul li a:focus:before {
-	color: #1abc9c;
+	color: #f8e1c4;
+	-webkit-filter: brightness(3.3);
+
 }
 
 /*wetkit scrollbar*/
@@ -267,7 +303,7 @@ body  {
   
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(226, 241, 14, 0.49);
+  background: rgba(210, 200, 249, 1);
 }
 ::-webkit-scrollbar-thumb:active {
   background: #000000;
@@ -286,3 +322,78 @@ body  {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+
+.footer {
+    padding: 56px 0 40px;
+    background: #000;
+    color: #fff;
+    position: relative;
+    border-width: 10px;
+	border-image-repeat: repeat;
+    border-image-source: url(img/border-image-footer.jpg);
+	    border-style: solid;
+	    -webkit-border-image: url(img/border-image-footer.jpg) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(img/border-image-footer.jpg) 30 round; /* Opera 11-12.1 */
+    border-image: url(img/border-image-footer.jpg) 30 round;
+}
+
+.footer a {
+  color: #fff;
+  max-height: 200px;
+}
+
+
+
+.footer-banner {
+        overflow: hidden;
+		text-align:center;
+		background-color: #000;
+		height: 200px;
+		
+     }
+	
+.footer-menu {
+        overflow: hidden;
+		text-align:center;
+				background-color: #000;
+				height: 100px;
+
+
+
+     }
+
+.footer-banner img:hover {
+-webkit-filter: opacity(0.8);
+	
+}
+
+
+.copyright {background-color: #000; margin-left: 5%;
+}
+	
+	
+/*Responsive settings*/
+
+
+
+
+@media screen and (max-width:480px){   
+   .footer-banner img {max-width: 400px;     max-height: 250px;
+} 
+   .container {max-width: 90%;}
+.footer-banner {height: 250px;} 
+
+#contact {max-width: 300px;}
+}
+
+#weibo {width: 30px}
+
+@media screen and (max-width:360px){   
+   .footer-banner img {max-width: 290px;} 
+
+}
+
+
+
+
