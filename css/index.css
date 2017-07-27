@@ -4,6 +4,9 @@
 
 @font-face {font-family: HLT_Geotica_2012; src: url(Source/font/HLT Geotica 2012.ttf);}
 
+
+
+
 body {
   margin: 0;
   background: #000; 
@@ -111,15 +114,16 @@ shake:hover {
 
 
 
-@media screen and (max-width:480px){   
+@media screen and (max-width:320px){   
 #introduction {
 
-  
     height: 500px;
     margin: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 100px;
-
 	
 }
+
+video {display: none;}
+
 }
