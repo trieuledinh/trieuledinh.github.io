@@ -35,11 +35,12 @@ video {
   width: 300 px;
   height: 300px;
   margin:2rem;
-  float: right;
+  float: left;
   font-size: 1.3rem;
   margin-top: 200px;
   line-height: 170%;
   text-shadow: horizontal-offset vertical-offset blur color;
+  
 }
 
 h1 {
@@ -106,4 +107,19 @@ shake:hover {
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+
+
+@media screen and (max-width:480px){   
+#introduction {
+
+  
+    height: 500px;
+    margin: 2rem;
+    font-size: 3rem;
+    margin-top: 100px;
+
+	
+}
 }

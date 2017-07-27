@@ -371,7 +371,9 @@ body  {
 
 .copyright {background-color: #000; margin-left: 5%;
 }
-	
+
+#weibo {width: 50px;}
+
 	
 /*Responsive settings*/
 
@@ -385,9 +387,11 @@ body  {
 .footer-banner {height: 250px;} 
 
 #contact {max-width: 300px;}
+
+#weibo {width: 40px;}
 }
 
-#weibo {width: 30px}
+
 
 @media screen and (max-width:360px){   
    .footer-banner img {max-width: 290px;} 
